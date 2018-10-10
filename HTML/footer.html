@@ -1,0 +1,45 @@
+<div class="row desktop-footer">
+    <ul class="left-footer">
+        <li><a href="pages/about/mission-statement.html">About Us</a></li>
+        <li><a href="#" class="lightbox">Contact</a></li>
+        <li><a href="#" class="lightbox">Tour</a></li>
+        <li>Net Price Calculator</li>
+        <li><a href="/HTML/pages/information/resource_login.php">Employee Resources</a></li>
+    </ul>
+    <a id="social-link">Social Links</a>
+    <ul class="right-footer">
+        <li><a href="https://www.facebook.com/dixietechcollege/" target="_blank" class="social-links"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/DXATC" target="_blank" class="social-links"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/dixie_tech/" target="_blank" class="social-links"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.youtube.com/user/DXATC?feature=watch" target="_blank" class="social-links"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+
+<div class="row mobile-footer">
+    <ul class="left-footer">
+        <li><a href="pages/about/mission-statement.html">About Us</a></li>
+    </ul>
+</div>
+
+<script>
+    $(function () {
+    
+    // Open lightbox if the contact, or tour footer -
+    // links are clicked
+    $('.lightbox').click(function (e) {
+        e.preventDefault();
+        $('.contact-lightbox').fadeIn("linear");
+        $('.contact-form').fadeIn("slow");
+        $('.contact-lightbox').css('display', 'block');
+        console.log("lightbox clicked");
+        $('.close-btn').click(function () {
+            $('.contact-lightbox').css('display', 'none');
+        });
+    });
+    
+    $("#social-link").click(function (e) {
+        e.preventDefault();
+        $(".right-footer").slideToggle();
+    });
+});
+</script>

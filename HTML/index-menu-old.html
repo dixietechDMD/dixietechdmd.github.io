@@ -1,0 +1,186 @@
+<!-- inline script to make mobile collapse work... -->
+			<script type="text/javascript">
+				function fixNav(x) {
+				    
+				    if (x.matches) { // If media query matches
+				        document.getElementById("navbar-collapse-1").classList.remove("navbar-collapse");
+				    } else {
+				        document.getElementById("navbar-collapse-1").classList.add("navbar-collapse");
+				        
+				    }
+				}
+
+				var x = window.matchMedia("(max-width: 1100px)")
+				fixNav(x) // Call listener function at run time
+				x.addListener(fixNav) // Attach listener function on state changes
+			</script>
+
+			<!-- end script -->
+
+<div class = "logo">
+				<a href="/HTML/index.html"><h4 id="logo">DIXIE TECH</h4></a>
+				</div>
+<div class = "container">
+
+<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+	
+		<!-- Programs and submenus -->
+		
+		<div class="special-nav collapse navbar-collapse" id="navbar-collapse-1">
+
+				<ul id="nav-ul" class="nav navbar-nav navbar-left">
+					<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROGRAMS <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">computer technologies</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/dmd.html">digital media design</a></li>
+										<li><a href="/HTML/pages/programs/drafting-and-design.html">drafting and design</a></li>
+										<li><a href="/HTML/pages/programs/information-technology.html">information technology</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">construction technologies</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/electrical-apprenticeship.html">electrical apprenticeship</a></li>
+										<li><a href="/HTML/pages/programs/hvac-technician.html">hvacr</a></li>
+										<li><a href="/HTML/pages/programs/plumbing-apprencticeship.html">plumbing apprenticeship</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">emergency services</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/emergency-medical-technician.html">emergency medical technician</a></li>
+										<li><a href="/HTML/pages/programs/emergency-medical-technician-advanced.html">advanced emergency medical technician</a></li>
+									</ul>
+								</li>
+									<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">medical</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/medication-aide.html">medication aide</a></li>
+										<li><a href="/HTML/pages/programs/medical-assisting.html">medical assisting</a></li>
+										<li><a href="/HTML/pages/programs/nursing-assistant.html">certified nursing assistant</a></li>
+										<li><a href="/HTML/pages/programs/pharmacy-tech.html">pharmacy technology</a></li>
+										<li><a href="/HTML/pages/programs/phlebotomy.html">phlebotomy technician</a></li>
+										<li><a href="/HTML/pages/programs/practical-nursing.html">practical nursing</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">service professionals</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/culinary.html">culinary</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">transportation technologies</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/auto-technician.html">automotive technology</a></li>
+										<li><a href="/HTML/pages/programs/cdl.html">commercial driver's license</a></li>
+										<li><a href="/HTML/pages/programs/collision-repair.html">collision repair</a></li>
+										<li><a href="/HTML/pages/programs/diesel-technology.html">diesel</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">opx</a>
+									<ul class="dropdown-menu">
+										<li><a href="/HTML/pages/programs/automation-technician.html">automation technician</a></li>
+										<li><a href="/HTML/pages/programs/cnc-machining.html">cnc machining</a></li>
+										<li><a href="/HTML/pages/programs/manufacturing-operations.html">manufacturing operations</a></li>
+										<li><a href="/HTML/pages/programs/welding.html">welding</a></li>
+									</ul>
+								</li>
+							</ul>
+					</li> <!-- end of program dropdown -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">AM STEM <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/HTML/pages/programs/nursing-assistant-am.html">certified nursing assistant</a></li>
+							<li><a href="/HTML/pages/programs/emergency-medical-technician-am.html">emergency medical technician</a></li>
+							<li><a href="/HTML/pages/programs/information-technology-am.html">information technology</a></li>
+							<li><a href="/HTML/pages/programs/dmd-design-am.html">digital media design</a></li>
+							<li><a href="/HTML/pages/programs/pre-engineering-am.html">pre-engineering</a></li>
+							<li><a href="/HTML/pages/programs/construction-am.html">construction</a></li>
+						</ul>
+					</li> 
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">STUDENTS <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/HTML/pages/students/accuplacer-cpt-test.html">accuplacer cpt test</a></li>
+							<li><a href="/HTML/pages/students/financial-aid/financial-aid-info.html">financial aid</a></li>
+							<li><a href="/HTML/pages/students/scholarships.html">scholarships</a></li>
+							<li><a href="/HTML/pages/students/veterans.html">veterans</a></li>
+							<li><a href="#">schedule test/fingerprinting</a></li>
+							<li><a href="/HTML/pages/students/how-to-enroll.html">enrollment checklist</a></li>
+							<li><a href="#">schedule a counselor visit</a></li>
+							<li><a href="/HTML/pages/about/dxtc-calendar.html">calendar</a></li>
+							<li><a href="#">policies</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/HTML/pages/about/mission-statement.html">mission</a></li>
+							<li><a href="/HTML/pages/information/locations.html">location</a></li>
+							<li><a href="/HTML/pages/about/accreditation.html">accreditation</a></li>
+							<li><a href="/HTML/pages/students/financial-aid/consumer-information.html">consumer information</a></li>
+							
+							<li><a href="/HTML/pages/about/faculty-and-staff.html">faculty/staff</a></li>
+							<li><a href="/HTML/pages/about/board.html">board</a></li>
+							
+							<li><a href="/HTML/pages/about/faq.html">faqs</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/HTML/pages/fasttrax/fast-trax.html">fast trax courses</a></li>
+							<li><a href="/HTML/pages/about/custom-fit.html">custom fit/employer partnerships</a></li>
+							<li><a href="/HTML/pages/about/employment-opp.html">employment opportunities</a></li>
+							<li><a href="/HTML/pages/information/notice.html">public notice</a></li>
+							<li><a href="#">american heart training</a></li>
+
+						</ul>
+					</li>
+				</ul>
+		</div>
+			<!-- end of programs and submenus -->
+
+		<div class= "icon-section">
+			<ul>
+					<li><a href="#"><img src="/HTML/img/navIcons/student.png"></a></li>
+					<li><a href="/HTML/pages/about/dxtc-calendar.html"><img src="/HTML/img/navIcons/calendar.png"></a></li>
+					<li><a href="/HTML/pages/information/locations.html"><img src="/HTML/img/navIcons/map.png"></a></li>
+					<li><a href="https://www.instagram.com/dixie_tech/?hl=en"><img src="/HTML/img/navIcons/instagram.png"></a></li>
+					<li><a id="search"><img src="/HTML/img/navIcons/search.png"></a></li>
+					<li id="searchLi">
+						<form id="searchForm" action="/HTML/pages/information/error.html">
+					  <input class="text-line" type="text" name="search" placeholder="Search">
+					  <input id=submitButton type="submit" name="submit">
+					</form>
+				</li>
+			</ul>
+		</div>
+
+
+		<script>
+			(function($){
+				$(document).ready(function(){
+					$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+						event.preventDefault(); 
+						event.stopPropagation(); 
+						$(this).parent().siblings().removeClass('open');
+						$(this).parent().toggleClass('open');
+					});
+				});
+			})(jQuery);
+		</script>

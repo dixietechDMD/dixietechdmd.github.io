@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dixie Tech - Apply</title>
+        
+        <!-- SEARCH ENGINE OPTIMIZATION -->
+        <meta name="description" content="Dixie Tech is about being Forward Thinking, Future Focused, and Career Ready, each day and in every interaction with our students and our business community.">
+        
+        <!-- VIEWPORT -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        
+        <!-- STYLESHEETS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- fontawesome for social media icons and menu dropdown arrows -->
+        <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- fontawesome for portal icons and probably everything else -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" type="text/css" media="all" href="css/stellarnav.min.css"> -->
+        
+        <style>
+            
+            h2 {
+                font-size: 250%;
+                word-spacing: 2px;
+                text-align: center;
+                margin-bottom: 30px;
+                letter-spacing: 1px;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            
+            @media only screen and (max-width: 1024px) {
+                h2 {
+                    font-size: 200%;
+                }
+            }
+            
+            @media only screen and (max-width: 768px) {
+                h2 {
+                    font-size: 150%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <nav class="my-navbar navbar navbar-inverse navbar-fixed-top">
+        </nav>
+        
+        <div class="body js--body">
+            
+            <section class="about-section js--wp-1">
+                <div class="row">
+                    <h2>Registration</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <form class="register" action="php/register.php" method="POST">
+                        <label for="id_program">Program</label>
+                        <select id="id_program" name="program">
+                            <option value selected>---------</option>
+                            <option value="12">Advanced Emergency Medical Technician</option>
+                            <option value="18">AM STEM CNA</option>
+                            <option value="22">AM STEM Digital Media Design</option>
+                            <option value="10">AM STEM EMT</option>
+                            <option value="19">AM STEM IT</option>
+                            <option value="20">AM STEM Pre-Engineering</option>
+                            <option value="25">Automotive Technology</option>
+                            <option value="3">Certified Nursing Assistant</option>
+                            <option value="13">CNC Machining</option>
+                            <option value="27">Collision Repair</option>
+                            <option value="26">Commercial Drivers License</option>
+                            <option value="28">Culinary Arts</option>
+                            <option value="14">Diesel Technology</option>
+                            <option value="24">Digital Media Design</option>
+                            <option value="9">Drafting & Design</option>
+                            <option value="6">Electrical Apprenticeship</option>
+                            <option value="11">Emergency Medical Technician</option>
+                            <option value="21">General</option>
+                            <option value="8">HVAC Technician</option>
+                            <option value="5">Industrial Automation Technician</option>
+                            <option value="16">Information Technology</option>
+                            <option value="4">Manufacturing Operations</option>
+                            <option value="1">Medical Assisting</option>
+                            <option value="2">Pharmacy Technician</option>
+                            <option value="7">Plumbing Apprenticeship</option>
+                            <option value="29">Welding</option>
+                        </select>
+                        <label for="id_first_name">First Name</label>
+                        <input id="id_first_name" type="text" name="first_name" maxlength="255">
+                        <label for="id_middle_name">Middle Name</label>
+                        <input id="id_middle_name" type="text" name="middle_name" maxlength="255">
+                        <label for="id_last_name">Last Name</label>
+                        <input id="id_last_name" type="text" name="last_name" maxlength="255">
+                        <label for="id_gender">Gender</label>
+                        <select id="id_gender" name="gender">
+                            <option value selected>---------</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                        <label for="id_address">Address</label>
+                        <input id="id_address" type="text" name="address" maxlength="255">
+                        <label for="id_city">City</label>
+                        <input id="id_city" type="text" name="city" maxlength="255">
+                        <label for="id_state">State</label>
+                        <input id="id_state" type="text" name="state" maxlength="255">
+                        <label for="id_postal_code">Postal Code</label>
+                        <input id="id_postal_code" type="text" name="postal_code" maxlength="255">
+                        <label for="id_home_phone">Home Phone</label>
+                        <input id="id_home_phone" type="text" name="home_phone" maxlength="20">
+                        <label for="id_cell_phone">Cell Phone</label>
+                        <input id="id_cell_phone" type="text" name="cell_phone" maxlength="20">
+                        <p class="help-block">Include country and area code.</p>
+                        <label for="id_email">Email</label>
+                        <input id="id_email" type="text" name="email" maxlength="100">
+                        <label for="id_emergency_contact">Emergency Contact</label>
+                        <input id="id_emergency_contact" type="text" name="emergency_contact" maxlength="200">
+                        <label for="id_emergency_phone">Emergency Phone</label>
+                        <input id="id_emergency_phone" type="text" name="emergency_phone" maxlength="20">
+                        <label for="id_ss_num">Social Security #</label>
+                        <input id="id_ss_num" type="text" name="ss_num" maxlength="100">
+                        <label for="id_birthday">Birthday</label>
+                        <input id="id_birthdate" type="text" name="birthdate" maxlength="100">
+                        <label for="id_hispanic">Are you Hispanic?</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_hispanic_0">
+                                        <input type="radio" id="id_hispanic_0" value="1" name="hispanic">
+                                        Yes
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_hispanic_1">
+                                        <input type="radio" id="id_hispanic_1" value="0" name="hispanic">
+                                        No
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="id_ethnicity">Ethnicity</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_ethnicity_0"><input type="checkbox" name="ethnicity" value="American Indian/Alaska Native" id="id_ethnicity_0">
+                                        American Indian/Alaska Native
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_ethnicity_1">
+                                        <input type="checkbox" name="ethnicity" value="Asian" id="id_ethnicity_1">
+                                        Asian
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_ethnicity_2">
+                                        <input type="checkbox" name="ethnicity" value="Black/African American" id="id_ethnicity_2"> Black/African American
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_ethnicity_3">
+                                        <input type="checkbox" name="ethnicity" value="Native Hawaiian/Pacific Island" id="id_ethnicity_3">
+                                        Native Hawaiian/Pacific Island
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_ethnicity_4">
+                                        <input type="checkbox" name="ethnicity" value="White" id="id_ethnicity_4">
+                                        White
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="id_graduate">Graduate</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_graduate_0">
+                                        <input type="radio" id="id_graduate_0" value="1" name="graduate">
+                                        Yes
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_graduate_1">
+                                        <input type="radio" id="id_graduate_1" value="0" name="graduate">
+                                        No
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="id_graduate_year">Year of high school graduation</label>
+                        <input id="id_graduate_year" type="text" name="graduate_year" maxlength="4">
+                        <label for="id_high_school">Name of high school last attended</label>
+                        <input id="id_high_school" type="text" name="high_school" maxlength="100">
+                        <label for="id_high_school_state">High school state</label>
+                        <input id="id_high_school_state" type="text" name="high_school_state" maxlength="100">
+                        <label for="id_attended_college">Is this the first college you have attended since exiting high school?</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_attended_college_0">
+                                        <input type="radio" id="id_attended_college_0" value="1" name="attended_college">
+                                        Yes
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_attended_college_1">
+                                        <input type="radio" id="id_attended_college_1" value="0" name="attended_college">
+                                        No
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="id_citizenship">Citizenship</label>
+                        <select name="citizenship" id="id_citizenship">
+                            <option value="" selected>---------</option>
+                            <option value="US Citizen">US Citizen</option>
+                            <option value="Student Visa">Student Visa</option>
+                            <option value="Resident Alien">Resident Alien</option>
+                        </select>
+                        <label for="id_payment_method">Payment method</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_payment_method_0">
+                                        <input type="checkbox" name="payment_method" value="Self Pay" id="id_payment_method_0"> Self Pay
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_1">
+                                        <input type="checkbox" name="payment_method" value="Vocational Rehab" id="id_payment_method_1">
+                                        Vocational Rehab
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_2">
+                                        <input type="checkbox" name="payment_method" value="DWS" id="id_payment_method_2">
+                                        DWS
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_3">
+                                        <input type="checkbox" name="payment_method" value="Employee Waiver" id="id_payment_method_3">
+                                        Employee Waiver
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_4">
+                                        <input type="checkbox" name="payment_method" value="Scholarship" id="id_payment_method_4"> Scholarship
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_5">
+                                        <input type="checkbox" name="payment_method" value="Employer" id="id_payment_method_5"> Employer
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_payment_method_6">
+                                        <input type="checkbox" name="payment_method" value="Other" id="id_payment_method_6">
+                                        Other
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <label for="id_referral">How did you hear about Dixie Tech?</label>
+                        <textarea id="id_referral" rows="10" cols="20" name="referral"></textarea>
+                        <label for="id_scholarship_name">Scholarship name</label>
+                        <input id="id_scholarship_name" type="text" name="scholarship_name" maxlength="100">
+                        <label for="id_employer_name">Employer name</label>
+                        <input id="id_employer_name" type="text" name="employer_name" maxlength="100">
+                        <label for="id_employer_address">Employer address</label>
+                        <input id="id_employer_address" type="text" name="employer_address" maxlength="100">
+                        <label for="id_employer_phone">Employer phone</label>
+                        <input id="id_employer_phone" type="text" name="employer_phone" maxlength="20">
+                        <label for="id_other_payment">Other payment</label>
+                        <input id="id_other_payment" type="text" name="other_payment" maxlength="100">
+                        <label class="control-label span3" for="id_additional_assistance">Additional assistance</label>
+                        <div class="radio-buttons">
+                            <ul>
+                                <li>
+                                    <label for="id_additional_assistance_0">
+                                        <input type="checkbox" name="additional_assistance" value="Food Stamps" id="id_additional_assistance_0">
+                                        Food Stamps
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_1">
+                                        <input type="checkbox" name="additional_assistance" value="Single Parent" id="id_additional_assistance_1">
+                                        Single Parent
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_2">
+                                        <input type="checkbox" name="additional_assistance" value="Displaced Homemaker" id="id_additional_assistance_2">
+                                        Displaced Homemaker
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_3">
+                                        <input type="checkbox" name="additional_assistance" value="Medical" id="id_additional_assistance_3">
+                                        Medical
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_4">
+                                        <input type="checkbox" name="additional_assistance" value="USOE Credit" id="id_additional_assistance_4">
+                                        USOE Credit
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_5">
+                                        <input type="checkbox" name="additional_assistance" value="Unemployment Insurance" id="id_additional_assistance_5">
+                                        Unemployment Insurance
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_6">
+                                        <input type="checkbox" name="additional_assistance" value="Disabled" id="id_additional_assistance_6">
+                                        Disabled
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_7">
+                                        <input type="checkbox" name="additional_assistance" value="Displaced Worker" id="id_additional_assistance_7">
+                                        Displaced Worker
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="id_additional_assistance_8">
+                                        <input type="checkbox" name="additional_assistance" value="FEP" id="id_additional_assistance_8">
+                                        FEP (Aid to Families w/ Dependant Children)
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="submit" name="submit" value="submit">
+                    </form>
+                </div>
+            </section>
+            
+            <div class="contact-lightbox">
+                <form class="contact-form clearfix" method="post">
+                    <p class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p id="form-header"><strong>Contact Us</strong></p>
+                    <div class="form-container clearfix">
+                        <div class="img-container">
+                            <img src="img/logo%20copy.png">
+                        </div>
+                        <div class="input-container">
+                            <input maxlength="30" type="text" name="name" placeholder="Name" required aria-required=”true”>
+                            <input maxlength="50" type="email" name="email" placeholder="Email" required aria-required=”true”>
+                            <input maxlength="11" type="tel" name="phoneNumber" placeholder="Phone Number">
+                            <input maxlength="50" type="text" name="subject" placeholder="Subject" required aria-required=”true”>
+                            <textarea type="text" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div> <!-- .body -->
+        
+        <footer class="section-footer clearfix">
+        </footer>
+        
+        <!-- SCRIPTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-iBcUE/x23aI6syuqF7EeT/+JFBxjPs5zeFJEXxumwb0=" crossorigin="anonymous"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/index-script.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/footer.js"></script>
+    </body>
+</html>
